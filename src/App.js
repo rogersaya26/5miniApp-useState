@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import CounterApp from './Components/CounterApp';
+import ConditionalApp from './Components/ConditionalApp';
+import ErrorApp from './Components/ErrorApp';
+import ProductApp from './Components/ProductApp';
+import ShoppingCart from './Components/ShoppingCart';
 
 function App() {
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <h1>Ejemplos Hook React</h1>
+      <CounterApp />
+      <hr />
+      <ConditionalApp />
+      <hr />
+      <ErrorApp />
+      <hr />
+      <ProductApp />
+      <hr />
+      <ShoppingCart />
+    </div>   
   );
 }
 
